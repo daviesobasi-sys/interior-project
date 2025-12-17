@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ecebe8;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #a67c52;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #a67c52;
+}
+#active {
+    color: #a67c52;
+    font-weight: bold;
+    text-decoration: underline;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Contact Page */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 40px 30px;
+  border-radius: 8px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  border: none;
+  background: #a67c52;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #92663e;
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #222;
+  color: white;
+}
+.footer a {
+  color: #a67c52;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+

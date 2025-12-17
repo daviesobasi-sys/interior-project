@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ecebe8;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #a67c52;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #a67c52;
+}
+#active {
+    color: #a67c52;
+    font-weight: bold;
+    text-decoration: underline;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Services Page Grid */
+.services-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 35px 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card h3 {
+  color: #a67c52;
+  margin-top: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #222;
+  color: white;
+}
+.footer a {
+  color: #a67c52;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
