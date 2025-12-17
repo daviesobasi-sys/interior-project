@@ -32,6 +32,14 @@ body {
 .nav-links a:hover {
   color: #a67c52;
 }
+#active {
+    color: #a67c52;
+    font-weight: bold;
+    text-decoration: underline;
+    appearance: none;
+    cursor: pointer;
+}
+
 
 /* Hero */
 .hero {
@@ -39,14 +47,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url("https://via.placeholder.com/1200x600");
+  position: relative;
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
 }
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
 
+.hero-background-image:hover {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+
+}
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -54,6 +78,9 @@ body {
   background: #a67c52;
   color: white;
   text-decoration: none;
+}
+.btn:hover {
+  background: #8c5e3e;
 }
 
 /* Sections */
